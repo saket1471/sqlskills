@@ -1,0 +1,85 @@
+
+
+SQL Query -
+SQL 
+DECLARE @Var CHAR(20)='Hi-'
+SET @Var=@Var+'Pawan'
+SELECT @Var
+GO
+
+
+How to find Monthend?
+
+Multiple Ways to Split a String
+
+	
+Nth Highest Salary
+
+Swap values in table column
+
+Find Max value from Columns in a row
+
+Hierarchical Query
+
+	WITH MyCTE
+	AS ( SELECT EmpID, FirstName, LastName, ManagerID
+	FROM Employee
+	WHERE ManagerID IS NULL
+	UNION ALL
+	SELECT EmpID, FirstName, LastName, ManagerID
+	FROM Employee
+	INNER JOIN MyCTE ON Employee.ManagerID = MyCTE.EmpID
+	WHERE Employee.ManagerID IS NOT NULL )
+	SELECT *
+	FROM MyCTE
+
+Concatenate Row values
+
+Scenario 1
+
+C1
+A
+B
+C
+D
+
+Scenario 2
+1 A
+1 B
+2 C
+2 D
+
+Should this be required? What should be the design to avoid this?
+
+
+Can Reader block Readers?
+
+What is Deadlock? How to avoid it?
+
+Transaction Levels?
+
+Execution Plan?
+Operators? 
+What are costs?
+
+
+Multiple References to Currency table, how to optimise?
+
+
+
+
+
+DWH 
+What is a Surrogate key?
+What is conformed fact?
+What are the difference between star and snowflake schema?
+Which table will load first - fact or dimension table?
+What are Late Arriving Dimensions? How you do handle the data in this case?
+What is a degenerate dimension?
+What is a Conformed Dimension?
+What is a Junk Dimension?
+What are the types of Facts? – Additive,SemiAdditive,Non-Additive
+What is a Factless Fact Table?
+What are Slowly Changing Dimensions?
+
+
